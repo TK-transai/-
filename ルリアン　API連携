@@ -1,0 +1,8 @@
+mermaid```
+sequenceDiagram
+    participant 弊社OCRシステム
+    participant 貴社基幹システム
+    note over 弊社OCRシステム: ① データ準備完了
+    貴社基幹システム->>弊社OCRシステム: ② (API) データ取得リクエスト
+    弊社OCRシステム-->>貴社基幹システム: ③ データ(CSV等)を返却
+    note over 貴社基幹システム: ④ 取得したデータを登録
